@@ -1,0 +1,19 @@
+/* Variables */
+html body {
+  background-color: rgba(196, 230, 226, 0.445);
+}
+
+body h1 {
+  color: rgb(29, 29, 66);
+}
+
+body a {
+  color: rgb(45, 45, 103);
+}
+
+.datos-publicidad input {
+  border: solid 2px rgb(88, 90, 112);
+  border-radius: 7px 7px 7px 7px;
+}
+
+/*# sourceMappingURL=main.css.map */

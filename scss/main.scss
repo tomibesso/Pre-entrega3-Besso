@@ -1,0 +1,21 @@
+/* Variables */
+
+@import './vars';
+
+    html body {
+        background-color: $color-fondo;
+    }
+
+    body h1 {
+        color: $color-titulos;
+    }
+
+    body a {
+        color: $color-enlaces;
+    }
+
+    .datos-publicidad input {
+        border: $borde-input;
+        border-radius: $border-radius;
+      }
+    
