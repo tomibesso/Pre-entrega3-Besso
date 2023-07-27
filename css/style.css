@@ -1,0 +1,483 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+a .logo {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.wikimotos {
+    position: absolute;
+    top: 95px;
+    left: 18px;
+}
+
+.logo:hover {
+    outline: 2px solid #a4a4ff;
+    border-radius: 50%;
+}
+
+.enlaces-navbar a {
+    color: rgb(43, 43, 77);
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.enlaces-navbar a:hover {
+    color: rgb(73, 104, 157);
+    text-decoration: underline;
+}
+
+main h1 {
+    color: rgb(32, 28, 61);
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.descripcion-inicio {
+    color: rgb(32, 28, 61);
+}
+
+.card-text {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 800;
+}
+
+.wikimotos {
+    text-decoration: none;
+    color: black;
+    font-family: 'Tektur', cursive;
+}
+
+.logos-redes-sociales {
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   padding: 2px;
+}
+
+.enlaces-bibliografia {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.datos-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+.datos-bottom button {
+    position: relative;
+    left: 137px;
+}
+
+.datos-bottom a {
+    position: relative;
+    right: 10px;
+}
+
+
+.buscador {
+    width: 400px;
+    position: relative;
+    left: 200px;
+}
+
+.nav-item:nth-of-type(4) {
+    width: 100px;
+}
+
+.galeria-partes-motos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 350px 350px;
+    padding:  75px 100px 100px 100px;
+}
+
+.galeria-partes-motos .card {
+    margin: 10px;
+    border: 2px solid rgba(2, 1, 28, 0.486);
+    background-color: #5f6691b7;
+}
+
+.card img {
+    height: 160px;
+    width: auto;
+    border: 2px solid rgba(1, 1, 51, 0.1);
+}
+
+.card p {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #c1c1f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;   
+}
+
+.bi {
+    font-size: 3em;
+    color: rgb(1, 3, 19);
+    margin: 15px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body button {
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    bottom: 10px;
+    background-color: rgba(5, 11, 167, 0.6);
+    border-radius: 10%;
+    border: 2px solid rgb(1, 1, 58);
+}
+
+.card-body button:hover {
+    background-color: rgba(5, 5, 118, 0.718);
+    color: #a4a4ff;
+}
+
+main h1, .descripcion-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.datos-publicidad {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 25px;
+    position: relative;
+    top: 40px
+}
+
+.datos-publicidad input, .datos-publicidad button {
+    margin-bottom: 10px;
+}
+
+.main-publicidad h3, .main-publicidad h5 {
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.input-bibliografia input {
+    width: 600px;
+}
+
+.container-mi-cuenta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.avatar {
+    display: flex;
+}
+
+.logo-avatar {
+    height: 170px;
+    width: 150px;
+    margin: 15px;
+}
+
+.cambiar-avatar {
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    bottom: 15px;
+}
+
+.datos-personales {
+    display: flex;
+}
+
+.datos-individual {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.datos-individual input {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.mas-sobre-ti {
+    margin-top: 10px;
+}
+
+.mas-sobre-ti input {
+    width: 400px;
+    height: 186px;
+}
+
+.guardar-volver {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+.guardar-volver button, .guardar-volver a{
+    margin: 10px;
+}
+
+.main-nosotros {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 100px;
+}
+
+.main-nosotros h3, .main-nosotros h5,.main-nosotros h2, .main-nosotros p {
+    color: rgb(32, 28, 61);
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.main-nosotros p {
+    font-size: 1.25em;
+}
+
+.enlaces-bibliografia li {
+    margin: 2.5px;
+}
+
+.enlaces-bibliografia ul li a:visited {
+    color: rgb(145, 18, 145);
+}
+
+.url-usuarios {
+    position: absolute;
+    bottom: 150px;
+    margin-left: 25px;
+}
+
+.input-bibliografia input, .input-bibliografia button, .datos-personales div input, .guardar-volver button {
+    border-radius: 5px;
+}
+
+@media only screen and (min-width:576px) and (max-width:1240px) {
+    .buscador {
+        position: absolute;
+        left: 200px;
+        width: 200px;
+    }
+
+    .main h3 {
+        text-align: center;
+    }
+
+    .galeria-partes-motos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 350px 350px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .guardar-volver {
+        padding-bottom: 5px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:815px) {
+    .galeria-partes-motos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width:360px) and (max-width:576px) {
+    .main-publicidad h3, main h5 {
+        padding: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .main-nosotros h1 {
+        margin-bottom: 20px;
+    }
+
+    main h3, main h2 {
+        text-align: center;
+    }
+
+    .datos-publicidad {
+        margin: 0;
+    }
+
+    .galeria-partes-motos {
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-toggler, .navbar-brand {
+        position: relative;
+        top: 30px;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+
+    .datos-publicidad {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .datos-publicidad input, .datos-publicidad button {
+        width: 300px;
+    }
+
+    .enlaces-bibliografia {
+        margin-top: 30px;
+    }
+
+    .url-usuarios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .url-usuarios h3 {
+        text-align: center;
+    }
+
+    .input-bibliografia {
+        width: 90vw;
+    }
+
+    .input-bibliografia input {
+        width: 90%;
+        margin: 5px;
+    }
+
+    .input-bibliografia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-mi-cuenta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .avatar a {
+        display: flex;
+        align-self: center;
+        margin-top: 5px;
+    }
+
+    .datos-personales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mas-sobre-ti input {
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+
+    .collapse {
+        z-index: 10;
+        width: 120px;
+        position: absolute;
+        right: 20px;
+        top: 90px;
+    }
+
+    .collapse ul {
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav ul li a {
+        display: flex;
+        align-self: center;
+    }
+
+    .buscador {
+        position: absolute;
+        top: 10px;
+        left: 125px;
+        width: 250px;
+    }
+
+    .navbar {
+        position: absolute;
+        left: 15px;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .guardar-volver {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
