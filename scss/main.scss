@@ -1,0 +1,8 @@
+@import './vars';
+@import './mixins';
+
+.card-body {
+    @include dfelx-column-aligncen;
+    @include w-h (20px, 40px);
+}
+

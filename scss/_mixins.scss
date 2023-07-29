@@ -1,0 +1,10 @@
+@mixin dfelx-column-aligncen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin w-h ($width, $height) {
+    width: $width;
+    height: $height;
+}
