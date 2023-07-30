@@ -4,7 +4,14 @@
     align-items: center;
 }
 
+@mixin dflex-justifycen-aligncen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin w-h ($width, $height) {
     width: $width;
     height: $height;
 }
+
