@@ -12,52 +12,52 @@
     <title>Mi Cuenta - WikiMotos</title>
 </head>
 <body>
-    <header class="contenedor grid-container">
+    <header class="header grid-container">
         <div>
-            <a href="../index.html"><img class="logo" src="../assets/Logo WikiMotos.png" alt="Logo WikiMotos"></a>
-            <a class="wikimotos" href="../index.html">WikiMotos</a>
+            <a href="../index.html"><img class="header__logo" src="../assets/Logo WikiMotos.png" alt="Logo WikiMotos"></a>
+            <a class="header__wikimotos" href="../index.html">WikiMotos</a>
         </div>
         <div>
-            <form class="d-flex buscador" role="search">
+            <form class="d-flex header__buscador" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
         </div>
         <div>
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid enlaces-navbar">
-                <a class="navbar-brand" href="../index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/publicidad.html">Publicidad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/bibliografia.html">Bibliografía</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/mi-cuenta.html">Mi cuenta</a>
-                    </li>
-                    </ul>
-                </div>
+                <div class="container-fluid navbar__enlaces">
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/publicidad.html">Publicidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/bibliografia.html">Bibliografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/mi-cuenta.html">Mi cuenta</a>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
         <main>
             <h1>Mi Cuenta</h1>
-            <div class="container-mi-cuenta">
-                <div class="avatar">
-                    <img class="logo-avatar" src="../assets/LogoAvatar.png" alt="Avatar"> <!-- Avatar actual del usuario --> 
-                    <a class="cambiar-avatar" href="">Cambiar Avatar</a> <!-- link que lleve al usuario a cambiar su avatar --> 
+            <div class="mi-cuenta">
+                <div class="mi-cuenta__avatar">
+                    <img class="avatar__logo" src="../assets/LogoAvatar.png" alt="Avatar"> <!-- Avatar actual del usuario --> 
+                    <a class="avatar__cambiar" href="">Cambiar Avatar</a> <!-- link que lleve al usuario a cambiar su avatar --> 
                 </div>
                 <section>
-                    <form class="datos-personales" action="/guardar-cambios"> <!-- "/guardar-cambios" indica al servidor donde voy a enviar esos datos --> 
+                    <form class="mi-cuenta__datos-personales" action="/guardar-cambios"> <!-- "/guardar-cambios" indica al servidor donde voy a enviar esos datos --> 
                         <div class="datos-personales__individual">
                             <input type="text" placeholder="Nombre de usuario"> 
                             <input type="text" placeholder="Correo electrónico"> 
@@ -65,27 +65,26 @@
                             <input type="text" placeholder="Marca preferida"> 
                             <input type="text" placeholder="Moto preferida">    
                         </div>
-                        <div class="datos-personales_mas">
+                        <div class="datos-personales__sobre-ti">
                             <input type="text" placeholder="Cuéntanos mas sobre ti">
                         </div> 
                     </form>
                 </section>
             </div>
-            <div class="guardar-volver">
+            <div class="mi-cuenta__guardar-volver">
                 <a href="../index.html">Volver al Inicio</a>                 
                 <button type="submit">Guardar Cambios</button>
             </div>
         </main>
-        <div class="fixed-bottom">
-            <footer class="grid-item-footer">
+        <footer class="fixed-bottom">
+            <div>
                 <a href="https://www.facebook.com/tomi.besso/" target="_blank"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/tomibesso/?hl=es-la" target="_blank"><i class="bi bi-instagram"></i></a>
                 <a href="https://twitter.com/tomibessoo" target="_blank"><i class="bi bi-twitter"></i></a>
                 <a href="https://ar.linkedin.com/in/tomas-besso-87728b161" target="_blank"><i class="bi bi-linkedin"></i></a>
                 <a href="mailto:tomi.besso12@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
-            </footer>
-        </div>
-    </div>
+            </div>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
