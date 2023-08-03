@@ -171,7 +171,7 @@ main h1, .main-inicio__descripcion {
     top: 20px;
 }
 
-.datos-publicidad {
+.main-publicidad__datos {
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -180,7 +180,7 @@ main h1, .main-inicio__descripcion {
     top: 40px
 }
 
-.datos-publicidad input, .datos-publicidad button {
+.main-publicidad__datos input, .main-publicidad__datos button {
     margin-bottom: 10px;
 }
 
@@ -285,7 +285,7 @@ main h1, .main-inicio__descripcion {
 
 .url-usuarios__form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 30vw;
 }
 
