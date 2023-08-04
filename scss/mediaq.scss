@@ -1,0 +1,193 @@
+@media only screen and (min-width:576px) and (max-width:1240px) {
+    .header__buscador {
+        position: absolute;
+        left: 200px;
+        width: 200px;
+    }
+
+    .main h3 {
+        text-align: center;
+    }
+
+    .main-inicio__galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 350px 350px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .mi-cuenta__guardar-volver {
+        padding-bottom: 5px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:815px) {
+    .main-inicio__galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width:360px) and (max-width:576px) {
+    .main-publicidad h3, main h5 {
+        padding: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .main-nosotros h1 {
+        margin-bottom: 20px;
+    }
+
+    main h3, main h2 {
+        text-align: center;
+    }
+
+    .main-publicidad__datos {
+        margin: 0;
+    }
+
+    .main-inicio__galeria {
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-toggler, .navbar-brand {
+        position: relative;
+        top: 30px;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+
+    .main-publicidad__datos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-publicidad__datos input, .main-publicidad__datos button {
+        width: 300px;
+    }
+
+    .main-bibliografia__enlaces {
+        margin-top: 30px;
+    }
+
+    .url-usuarios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .url-usuarios h3 {
+        text-align: center;
+    }
+
+    .main-bibliografia__url-usuarios__form {
+        width: 90vw;
+    }
+
+    .main-bibliografia__url-usuarios__form input {
+        width: px;
+        margin: 5px;
+    }
+
+    .main-bibliografia__url-usuarios__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mi-cuenta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mi-cuenta__avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .mi-cuenta__avatar a {
+        display: flex;
+        align-self: center;
+        margin-top: 5px;
+    }
+
+    .mi-cuenta__datos-personales__individual {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mi-cuenta__datos-personales__sobre-ti input {
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+
+    .collapse {
+        z-index: 10;
+        width: 120px;
+        position: absolute;
+        right: 20px;
+        top: 90px;
+    }
+
+    .collapse ul {
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav ul li a {
+        display: flex;
+        align-self: center;
+    }
+
+    .header__buscador {
+        position: absolute;
+        top: 10px;
+        left: 125px;
+        width: 250px;
+    }
+
+    .navbar {
+        position: absolute;
+        left: 15px;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .mi-cuenta__guardar-volver {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
