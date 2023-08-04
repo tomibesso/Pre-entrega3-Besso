@@ -12,7 +12,7 @@ main h1 {
     @include dflex-jutifycen-aligncen;
     position: relative;
     top: 20px;
-    color: rgb(32, 28, 61);
+    color: $color-titulos;
 }
 
 .header {
@@ -38,7 +38,7 @@ main h1 {
     top: 95px;
     left: 18px;
     text-decoration: none;
-    color: black;
+    color:$azul-muy-oscuro;
     font-family: 'Tektur', cursive;
   }
 
@@ -60,7 +60,7 @@ main h1 {
 
 .navbar__enlaces {
   a {
-  color: rgb(43, 43, 77);
+  color: $color-enlaces;
   font-family: 'Kanit', sans-serif;
   font-weight: bold;
   }
@@ -85,9 +85,7 @@ footer {
 
 .main-inicio {
   &__descripcion, h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dflex-jutifycen-aligncen;
     position: relative;
     top: 20px;
   }
@@ -138,6 +136,7 @@ footer {
 .main-bibliografia {
   &__enlaces {
     @include dfelx-column-aligncen;
+    align-items: normal;
     margin: 10px;
   }
 
@@ -162,6 +161,8 @@ footer {
         input {
           width: 100%;
           margin-right: 10px;
+          border: $borde-input;
+          border-radius: $border-radius;
         }
   }
   }
@@ -176,14 +177,31 @@ footer {
 
   &__datos {
     @include dfelx-column-aligncen;
+    align-items: normal;
     width: 500px;
     margin-left: 25px;
     position: relative;
     top: 40px
   }
 
-  &__datos input, &__datos button {
-    margin-bottom: 10px;
+  &__datos {
+    input {
+      margin-bottom: 10px;
+      border: $borde-input;
+      border-radius: $border-radius;
+    }
+
+    button {
+      margin-bottom: 10px;
+      border: $borde-button;
+      border-radius: $border-radius;
+      background-color: $fondo-button;
+    }
+
+    button:hover {
+      background-color: rgb(27, 19, 69);
+      color: white;
+    }
   }
 }
 
@@ -236,6 +254,8 @@ footer {
         input {
           margin-bottom: 10px;
           width: 300px;
+          border: $borde-input;
+          border-radius: $border-radius;
         }
     }
 
@@ -245,6 +265,8 @@ footer {
         input {
           width: 400px;
           height: 186px;
+          border: $borde-input;
+          border-radius: $border-radius;
         }
     }
   }
@@ -258,6 +280,14 @@ footer {
 
       button {
         margin: 10px;
+        border: $borde-button;
+        border-radius: $border-radius;
+        background-color: $fondo-button;
+      }
+
+      button:hover {
+        background-color: rgb(27, 19, 69);
+        color: white;
       }
 
       a {

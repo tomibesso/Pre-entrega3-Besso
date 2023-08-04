@@ -11,7 +11,7 @@ main h1 {
   align-items: center;
   position: relative;
   top: 20px;
-  color: rgb(32, 28, 61);
+  color: rgb(29, 29, 66);
 }
 
 .header {
@@ -36,7 +36,7 @@ main h1 {
   top: 95px;
   left: 18px;
   text-decoration: none;
-  color: black;
+  color: rgb(17, 17, 40);
   font-family: "Tektur", cursive;
 }
 .header__buscador {
@@ -53,7 +53,7 @@ main h1 {
 }
 
 .navbar__enlaces a {
-  color: rgb(43, 43, 77);
+  color: rgb(45, 45, 103);
   font-family: "Kanit", sans-serif;
   font-weight: bold;
 }
@@ -126,6 +126,7 @@ footer .bi {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: normal;
   margin: 10px;
 }
 .main-bibliografia__enlaces li {
@@ -147,6 +148,8 @@ footer .bi {
 .main-bibliografia__url-usuarios__form input {
   width: 100%;
   margin-right: 10px;
+  border: solid 2px rgb(88, 90, 112);
+  border-radius: 7px 7px 7px 7px;
 }
 
 .main-publicidad h3, .main-publicidad h5 {
@@ -158,13 +161,26 @@ footer .bi {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: normal;
   width: 500px;
   margin-left: 25px;
   position: relative;
   top: 40px;
 }
-.main-publicidad__datos input, .main-publicidad__datos button {
+.main-publicidad__datos input {
   margin-bottom: 10px;
+  border: solid 2px rgb(88, 90, 112);
+  border-radius: 7px 7px 7px 7px;
+}
+.main-publicidad__datos button {
+  margin-bottom: 10px;
+  border: solid 2px rgb(55, 57, 86);
+  border-radius: 7px 7px 7px 7px;
+  background-color: rgba(33, 34, 47, 0.626);
+}
+.main-publicidad__datos button:hover {
+  background-color: rgb(27, 19, 69);
+  color: white;
 }
 
 .main-nosotros {
@@ -213,6 +229,8 @@ footer .bi {
 .mi-cuenta__datos-personales__individual input {
   margin-bottom: 10px;
   width: 300px;
+  border: solid 2px rgb(88, 90, 112);
+  border-radius: 7px 7px 7px 7px;
 }
 .mi-cuenta__datos-personales__sobre-ti {
   margin-top: 10px;
@@ -220,6 +238,8 @@ footer .bi {
 .mi-cuenta__datos-personales__sobre-ti input {
   width: 400px;
   height: 186px;
+  border: solid 2px rgb(88, 90, 112);
+  border-radius: 7px 7px 7px 7px;
 }
 .mi-cuenta__guardar-volver {
   display: flex;
@@ -230,6 +250,13 @@ footer .bi {
 }
 .mi-cuenta__guardar-volver button {
   margin: 10px;
+  border: solid 2px rgb(55, 57, 86);
+  border-radius: 7px 7px 7px 7px;
+  background-color: rgba(33, 34, 47, 0.626);
+}
+.mi-cuenta__guardar-volver button:hover {
+  background-color: rgb(27, 19, 69);
+  color: white;
 }
 .mi-cuenta__guardar-volver a {
   margin: 10px;
