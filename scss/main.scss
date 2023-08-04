@@ -2,10 +2,11 @@
 @import './vars';
 @import './mixins.scss';
 
-html, body {
+html body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: $color-fondo;
 }
 
 main h1 {
@@ -46,6 +47,10 @@ main h1 {
     width: 400px;
     position: relative;
     left: 200px;
+
+      input {
+        border: $borde-input;
+      }
 
       button {
         color: rgb(32, 28, 61);

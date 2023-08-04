@@ -1,8 +1,9 @@
 /* Variables */
-html, body {
+html body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: rgba(178, 181, 242, 0.426);
 }
 
 main h1 {
@@ -43,6 +44,9 @@ main h1 {
   width: 400px;
   position: relative;
   left: 200px;
+}
+.header__buscador input {
+  border: solid 2px rgb(88, 90, 112);
 }
 .header__buscador button {
   color: rgb(32, 28, 61);
