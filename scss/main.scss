@@ -1,5 +1,6 @@
 /* Variables */
 @import './vars';
+@import './mixins.scss';
 
 html, body {
   height: 100%;
@@ -8,9 +9,7 @@ html, body {
 }
 
 main h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dflex-jutifycen-aligncen;
     position: relative;
     top: 20px;
     color: rgb(32, 28, 61);
@@ -47,6 +46,15 @@ main h1 {
     width: 400px;
     position: relative;
     left: 200px;
+
+      button {
+        color: rgb(32, 28, 61);
+        border-color: rgb(32, 28, 61);
+      }
+
+      button:hover {
+        background-color: rgb(32, 28, 61);
+      }
   }
 }
 
@@ -65,9 +73,7 @@ main h1 {
 
 footer {
   background-color: #c1c1f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include dflex-jutifycen-aligncen;
   height: 100px;
   
   .bi {
@@ -111,9 +117,7 @@ footer {
 }
 
 .card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include dfelx-column-aligncen;
 
   &__button {
     display: flex;
@@ -133,8 +137,7 @@ footer {
 
 .main-bibliografia {
   &__enlaces {
-    display: flex;
-    flex-direction: column;
+    @include dfelx-column-aligncen;
     margin: 10px;
   }
 
@@ -172,8 +175,7 @@ footer {
   }
 
   &__datos {
-    display: flex;
-    flex-direction: column;
+    @include dfelx-column-aligncen;
     width: 500px;
     margin-left: 25px;
     position: relative;
@@ -228,8 +230,7 @@ footer {
     flex-direction: row;
 
     &__individual {
-      display: flex;
-      flex-direction: column;
+      @include dfelx-column-aligncen;
       margin: 10px;
 
         input {

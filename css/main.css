@@ -44,6 +44,13 @@ main h1 {
   position: relative;
   left: 200px;
 }
+.header__buscador button {
+  color: rgb(32, 28, 61);
+  border-color: rgb(32, 28, 61);
+}
+.header__buscador button:hover {
+  background-color: rgb(32, 28, 61);
+}
 
 .navbar__enlaces a {
   color: rgb(43, 43, 77);
@@ -118,6 +125,7 @@ footer .bi {
 .main-bibliografia__enlaces {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 10px;
 }
 .main-bibliografia__enlaces li {
@@ -149,6 +157,7 @@ footer .bi {
 .main-publicidad__datos {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 500px;
   margin-left: 25px;
   position: relative;
@@ -198,6 +207,7 @@ footer .bi {
 .mi-cuenta__datos-personales__individual {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 10px;
 }
 .mi-cuenta__datos-personales__individual input {
