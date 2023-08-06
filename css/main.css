@@ -81,11 +81,6 @@ main h1 {
   background-color: rgb(32, 28, 61);
 }
 
-.card {
-  animation-name: escala-card;
-  animation-duration: 0.5s;
-}
-
 .navbar__enlaces a {
   color: rgb(45, 45, 103);
   font-family: "Kanit", sans-serif;
@@ -341,6 +336,18 @@ footer .bi {
     position: absolute;
     right: 5px;
   }
+  .navbar-collapse {
+    z-index: 10;
+    position: fixed;
+    top: 75px;
+    right: 5px;
+    background-color: rgb(176, 193, 241);
+    margin-bottom: 100px;
+    border-radius: 5px;
+  }
+  .navbar-collapse a {
+    text-align: center;
+  }
   main {
     text-align: center;
   }
@@ -424,6 +431,18 @@ footer .bi {
     position: absolute;
     top: 20px;
   }
+  .navbar-collapse {
+    z-index: 10;
+    position: fixed;
+    top: 100px;
+    right: 3px;
+    background-color: rgb(176, 193, 241);
+    margin-bottom: 100px;
+    border-radius: 5px;
+  }
+  .navbar-collapse a {
+    text-align: center;
+  }
   .navbar-brand {
     display: none;
   }
@@ -497,6 +516,18 @@ footer .bi {
     position: absolute;
     left: 25vw;
     top: 30px;
+  }
+  .navbar-collapse {
+    z-index: 10;
+    position: absolute;
+    top: 55px;
+    right: 3px;
+    background-color: rgb(176, 193, 241);
+    margin-bottom: 100px;
+    border-radius: 5px;
+  }
+  .navbar-collapse a {
+    text-align: center;
   }
   main {
     text-align: center;

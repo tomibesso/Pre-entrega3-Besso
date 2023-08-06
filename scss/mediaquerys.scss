@@ -26,6 +26,20 @@
         right: 5px;
     }
 
+    .navbar-collapse {
+        z-index: 10;
+        position: fixed;
+        top: 75px;
+        right: 5px;
+        background-color: rgb(176, 193, 241);
+        margin-bottom: 100px;
+        border-radius: 5px;
+      
+          a {
+            text-align: center;
+          }
+      } 
+
     main {
         text-align: center;
 
@@ -128,6 +142,20 @@
         top: 20px;
     }
 
+    .navbar-collapse {
+        z-index: 10;
+        position: fixed;
+        top: 100px;
+        right: 3px;
+        background-color: rgb(176, 193, 241);
+        margin-bottom: 100px;
+        border-radius: 5px;
+      
+          a {
+            text-align: center;
+          }
+      } 
+
     .navbar-brand {
         display: none;
     }
@@ -218,6 +246,20 @@
         left: 25vw;
         top: 30px;
     }
+
+    .navbar-collapse {
+        z-index: 10;
+        position: absolute;
+        top: 55px;
+        right: 3px;
+        background-color: rgb(176, 193, 241);
+        margin-bottom: 100px;
+        border-radius: 5px;
+      
+          a {
+            text-align: center;
+          }
+      } 
 
     main {
         text-align: center;
