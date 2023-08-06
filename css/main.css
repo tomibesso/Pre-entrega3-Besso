@@ -370,25 +370,42 @@ footer .bi {
   .navbar-brand {
     display: none;
   }
+  .main-publicidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
   .main-publicidad h3, .main-publicidad h5 {
     padding: 0;
     margin: 0;
     text-align: center;
   }
   .main-publicidad__datos {
-    width: 90vw;
+    margin: 0;
+    width: 90%;
   }
   .main-nosotros h1 {
     margin-bottom: 35px;
   }
+  .main-bibliografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
   .main-bibliografia__url-usuarios {
-    width: 90vw;
+    margin: 0;
+    width: 100%;
   }
   .main-bibliografia__url-usuarios__form {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 90vw;
+    width: 95%;
+    margin: auto;
   }
   .main-bibliografia__url-usuarios__form input {
     margin-bottom: 15px;
@@ -414,6 +431,13 @@ footer .bi {
     align-items: center;
     width: 100vw;
     margin-bottom: 10px;
+  }
+  .mi-cuenta__datos-personales__sobre-ti {
+    width: 95%;
+    margin: auto;
+  }
+  .mi-cuenta__datos-personales__sobre-ti input {
+    width: 100%;
   }
   .mi-cuenta__guardar-volver {
     width: 100vw;
