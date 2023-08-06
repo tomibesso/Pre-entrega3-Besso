@@ -126,6 +126,7 @@ footer {
     grid-template-columns: 25% 25% 25% 25% ;
     grid-template-rows: 350px 350px;
     padding:  75px 100px 100px 100px;
+    flex-wrap: wrap;
   }
 }
 
@@ -146,7 +147,7 @@ footer {
 }
 
 .card-body {
-  @include dfelx-column-aligncen;
+  @include dflex-column-aligncen;
 
   &__button {
     display: flex;
@@ -166,7 +167,7 @@ footer {
 
 .main-bibliografia {
   &__enlaces {
-    @include dfelx-column-aligncen;
+    @include dflex-column-aligncen;
     align-items: normal;
     margin: 10px;
   }
@@ -197,6 +198,12 @@ footer {
           border: $borde-input;
           border-radius: $border-radius;
         }
+
+        button {
+          background-color: $fondo-button;
+          border: $borde-button;
+          border-radius: $border-radius;
+        }
   }
   }
 }
@@ -209,7 +216,7 @@ footer {
   }
 
   &__datos {
-    @include dfelx-column-aligncen;
+    @include dflex-column-aligncen;
     align-items: normal;
     width: 500px;
     margin-left: 25px;
@@ -285,7 +292,7 @@ footer {
     top: 15px;
 
     &__individual {
-      @include dfelx-column-aligncen;
+      @include dflex-column-aligncen;
       margin: 10px;
 
         input {
@@ -332,4 +339,6 @@ footer {
       }
   }
 }
+
+@import './mediaquerys.scss';
 /*# sourceMappingURL=main.scss.map */

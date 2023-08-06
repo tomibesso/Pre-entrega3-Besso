@@ -1,0 +1,325 @@
+@media only screen and (min-width: 320px) and (max-width: 426px) {
+    header {
+        @include dflex-jutifycen-aligncen;
+    }
+
+    .header__buscador {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 40vw;
+        top: 25px;
+
+        .btn {
+            width: 30vw;
+            margin-top: 5px;
+        }
+
+        .form-control {
+            width: 30vw;
+        }
+    }
+
+    .navbar {
+        position: absolute;
+        right: 5px;
+    }
+
+    main {
+        text-align: center;
+
+            h1 {
+                margin-bottom: 20px;
+            }
+    }
+
+    .main-inicio__galeria {
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer div .bi {
+        font-size: 2em;
+        color: rgb(1, 3, 19);
+        margin: 5px;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .main-publicidad {
+        h3, h5 {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        &__datos {
+            width: 90vw;
+        }
+    }
+
+    .main-nosotros {
+        h1 {
+            margin-bottom: 35px;
+        }
+    }
+
+    .main-bibliografia__url-usuarios {
+        width: 90vw;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 90vw;
+
+                input {
+                    margin-bottom: 15px;
+                }
+        }
+    }
+
+    .mi-cuenta {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+
+        &__avatar {
+            width: 100vw;
+            @include dflex-column-aligncen;
+
+            &__cambiar {
+                align-self: center;
+                margin-top: 10px;
+            }
+        }
+
+        &__datos-personales {
+            @include dflex-column-aligncen;
+            width: 100vw;
+            margin-bottom: 10px;
+        }
+
+        &__guardar-volver {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+    .header__buscador {
+        width: 50vw;
+        position: absolute;
+        left: 25vw;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 20px;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    main {
+        text-align: center;
+
+            h1 {
+                margin-bottom: 20px;
+            }
+    }
+
+    .main-inicio__galeria {
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-publicidad {
+        h3, h5 {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        &__datos {
+            width: 90vw;
+        }
+    }
+
+    .main-nosotros {
+        h1 {
+            margin-bottom: 35px;
+        }
+    }
+
+    .main-bibliografia__url-usuarios {
+        width: 90vw;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 90vw;
+
+                input {
+                    margin-bottom: 15px;
+                }
+        }
+    }
+    
+    .mi-cuenta {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+
+        &__avatar {
+            width: 100vw;
+            @include dflex-column-aligncen;
+
+            &__cambiar {
+                align-self: center;
+                margin-top: 10px;
+            }
+        }
+
+        &__datos-personales {
+            @include dflex-column-aligncen;
+            width: 100vw;
+            margin-bottom: 10px;
+        }
+
+        &__guardar-volver {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .header__buscador {
+        width: 50vw;
+        position: absolute;
+        left: 25vw;
+        top: 30px;
+    }
+
+    main {
+        text-align: center;
+
+            h1 {
+                margin-bottom: 20px;
+            }
+    }
+
+    .main-inicio {
+        
+        h3 {
+            margin: 10px;
+        }
+
+        &__galeria {
+            margin-top: 20px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .main-publicidad {
+        h3, h5 {
+            padding: 0;
+            margin: 10px;
+            text-align: center;
+        }
+
+        &__datos {
+            width: 100vw;
+        }
+    }
+
+    .main-nosotros {
+        h1 {
+            margin-bottom: 35px;
+        }
+    }
+
+    .main-bibliografia__url-usuarios {
+        margin: 0 10px;
+        width: 100vw;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100vw;
+
+                input {
+                    margin-bottom: 15px;
+                }
+        }
+    }
+    
+    .mi-cuenta {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+
+        &__avatar {
+            width: 100vw;
+            @include dflex-column-aligncen;
+
+            &__cambiar {
+                align-self: center;
+                margin-top: 10px;
+            }
+        }
+
+        &__datos-personales {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            margin-bottom: 10px;
+        }
+
+        &__guardar-volver {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1230px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar {
+        margin-left: 150px;
+    }
+
+    .main-inicio__galeria {
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

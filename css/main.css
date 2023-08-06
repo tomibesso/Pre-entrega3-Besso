@@ -129,6 +129,7 @@ footer .bi {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 350px 350px;
   padding: 75px 100px 100px 100px;
+  flex-wrap: wrap;
 }
 
 .main-inicio__galeria .main-inicio__galeria__card {
@@ -195,6 +196,11 @@ footer .bi {
   border: solid 2px rgb(88, 90, 112);
   border-radius: 7px 7px 7px 7px;
 }
+.main-bibliografia__url-usuarios__form button {
+  background-color: rgba(54, 56, 81, 0.626);
+  border: solid 2px rgb(55, 57, 86);
+  border-radius: 7px 7px 7px 7px;
+}
 
 .main-publicidad h3, .main-publicidad h5 {
   padding-top: 10px;
@@ -220,7 +226,7 @@ footer .bi {
   margin-bottom: 10px;
   border: solid 2px rgb(55, 57, 86);
   border-radius: 7px 7px 7px 7px;
-  background-color: rgba(33, 34, 47, 0.626);
+  background-color: rgba(54, 56, 81, 0.626);
 }
 .main-publicidad__datos button:hover {
   background-color: rgb(27, 19, 69);
@@ -300,7 +306,7 @@ footer .bi {
   margin: 10px;
   border: solid 2px rgb(55, 57, 86);
   border-radius: 7px 7px 7px 7px;
-  background-color: rgba(33, 34, 47, 0.626);
+  background-color: rgba(54, 56, 81, 0.626);
 }
 .mi-cuenta__guardar-volver button:hover {
   background-color: rgb(27, 19, 69);
@@ -310,6 +316,270 @@ footer .bi {
   margin: 10px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 426px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__buscador {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 40vw;
+    top: 25px;
+  }
+  .header__buscador .btn {
+    width: 30vw;
+    margin-top: 5px;
+  }
+  .header__buscador .form-control {
+    width: 30vw;
+  }
+  .navbar {
+    position: absolute;
+    right: 5px;
+  }
+  main {
+    text-align: center;
+  }
+  main h1 {
+    margin-bottom: 20px;
+  }
+  .main-inicio__galeria {
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer div .bi {
+    font-size: 2em;
+    color: rgb(1, 3, 19);
+    margin: 5px;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .main-publicidad h3, .main-publicidad h5 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .main-publicidad__datos {
+    width: 90vw;
+  }
+  .main-nosotros h1 {
+    margin-bottom: 35px;
+  }
+  .main-bibliografia__url-usuarios {
+    width: 90vw;
+  }
+  .main-bibliografia__url-usuarios__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90vw;
+  }
+  .main-bibliografia__url-usuarios__form input {
+    margin-bottom: 15px;
+  }
+  .mi-cuenta {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  .mi-cuenta__avatar {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mi-cuenta__avatar__cambiar {
+    align-self: center;
+    margin-top: 10px;
+  }
+  .mi-cuenta__datos-personales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 10px;
+  }
+  .mi-cuenta__guardar-volver {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .header__buscador {
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+  }
+  .navbar {
+    position: absolute;
+    top: 20px;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  main {
+    text-align: center;
+  }
+  main h1 {
+    margin-bottom: 20px;
+  }
+  .main-inicio__galeria {
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-publicidad h3, .main-publicidad h5 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .main-publicidad__datos {
+    width: 90vw;
+  }
+  .main-nosotros h1 {
+    margin-bottom: 35px;
+  }
+  .main-bibliografia__url-usuarios {
+    width: 90vw;
+  }
+  .main-bibliografia__url-usuarios__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90vw;
+  }
+  .main-bibliografia__url-usuarios__form input {
+    margin-bottom: 15px;
+  }
+  .mi-cuenta {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  .mi-cuenta__avatar {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mi-cuenta__avatar__cambiar {
+    align-self: center;
+    margin-top: 10px;
+  }
+  .mi-cuenta__datos-personales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 10px;
+  }
+  .mi-cuenta__guardar-volver {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .header__buscador {
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+    top: 30px;
+  }
+  main {
+    text-align: center;
+  }
+  main h1 {
+    margin-bottom: 20px;
+  }
+  .main-inicio h3 {
+    margin: 10px;
+  }
+  .main-inicio__galeria {
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-publicidad h3, .main-publicidad h5 {
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+  }
+  .main-publicidad__datos {
+    width: 100vw;
+  }
+  .main-nosotros h1 {
+    margin-bottom: 35px;
+  }
+  .main-bibliografia__url-usuarios {
+    margin: 0 10px;
+    width: 100vw;
+  }
+  .main-bibliografia__url-usuarios__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+  }
+  .main-bibliografia__url-usuarios__form input {
+    margin-bottom: 15px;
+  }
+  .mi-cuenta {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  .mi-cuenta__avatar {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mi-cuenta__avatar__cambiar {
+    align-self: center;
+    margin-top: 10px;
+  }
+  .mi-cuenta__datos-personales {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 10px;
+  }
+  .mi-cuenta__guardar-volver {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 990px) and (max-width: 1230px) {
+  .navbar-brand {
+    display: none;
+  }
+  .navbar {
+    margin-left: 150px;
+  }
+  .main-inicio__galeria {
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 
 /*# sourceMappingURL=main.css.map */
