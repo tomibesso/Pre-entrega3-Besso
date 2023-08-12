@@ -1,0 +1,228 @@
+main h1 {
+    @include dflex-justifycen-aligncen;
+    font-size: 3em;
+    position: relative;
+    top: 20px;
+    color: $color-titulos;
+    animation-name: animacion-h1;
+    animation-duration: 2s;
+  }
+  
+  .main-inicio {
+    &__descripcion, h1 {
+      @include dflex-justifycen-aligncen;
+      position: relative;
+      top: 20px;
+    }
+  
+    &__galeria {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25% ;
+      grid-template-rows: 350px 350px;
+      padding:  75px 100px 100px 100px;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .main-inicio__galeria .main-inicio__galeria__card {
+    margin: 10px;
+    border: 2px solid rgba(2, 1, 28, 0.486);
+    background-color: #5f6691b7;
+  
+      img {
+        height: 160px;
+        width: auto;
+        border: 2px solid rgba(1, 1, 51, 0.1);
+      }
+  
+      p {
+        font-size: 14px;
+      }
+  }
+  
+  .card-body {
+    @include dflex-column-aligncen;
+  
+    &__button {
+      display: flex;
+      align-self: flex-end;
+      position: relative;
+      bottom: 10px;
+      background-color: rgba(5, 11, 167, 0.6);
+      border-radius: 10%;
+      border: 2px solid rgb(1, 1, 58);
+    }
+  
+    &__button:hover {
+      background-color: rgba(5, 5, 118, 0.718);
+      color: #a4a4ff;
+    }
+  }
+  
+  .main-bibliografia {
+    
+    &__enlaces {
+      @include dflex-column-aligncen;
+      align-items: normal;
+      margin-top: 20px;
+    }
+  
+    &__enlaces li {
+      margin: 2.5px;
+    }
+  
+    &__enlaces li a:visited {
+      color: rgb(118, 14, 118);
+    }
+  
+    &__url-usuarios {
+      position: absolute;
+      bottom: 150px;
+      margin-left: 25px;
+  
+      &__form {
+        display: flex;
+        flex-direction: row;
+        width: 30vw;
+        position: relative;
+        top: 15px;
+  
+          input {
+            width: 100%;
+            margin-right: 10px;
+            border: $borde-input;
+            border-radius: $border-radius;
+          }
+  
+          button {
+            background-color: $fondo-button;
+            border: $borde-button;
+            border-radius: $border-radius;
+          }
+    }
+    }
+  }
+  
+  .main-publicidad {
+    @include dflex-column-aligncen;
+    h3, h5 {
+      color: $azul-muy-oscuro;
+      margin-top: 20px;
+    }
+  
+    &__datos {
+      @include dflex-column-aligncen;
+      margin-top: 40px;
+      width: 50vw;
+    }
+  
+    &__datos {
+      input {
+        width: 70%;
+        margin-bottom: 10px;
+        border: $borde-input;
+        border-radius: $border-radius;
+      }
+  
+      button {
+        width: 30%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        border: $borde-button;
+        border-radius: $border-radius;
+        background-color: $fondo-button;
+      }
+  
+      button:hover {
+        background-color: rgb(27, 19, 69);
+        color: white;
+      }
+    }
+  }
+  
+  .main-nosotros {
+    @include dflex-column-aligncen;
+    margin: 0 40px;
+  
+    h1 {
+      padding-bottom: 20px;
+    }
+  
+    h3, p {
+      color: rgb(32, 28, 61);
+      font-family: 'Kanit', sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 1.25em
+    }
+  }
+  
+  .mi-cuenta {
+    @include dflex-column-aligncen;
+  
+    &__avatar {
+      @include dflex-column-aligncen;
+  
+      &__logo {
+        height: 170px;
+        width: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  
+    &__datos-personales {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      top: 15px;
+  
+      &__individual {
+        @include dflex-column-aligncen;
+        margin: 10px;
+  
+          input {
+            margin-bottom: 10px;
+            width: 300px;
+            border: $borde-input;
+            border-radius: $border-radius;
+          }
+      }
+  
+      &__sobre-ti {
+        margin-top: 10px;
+  
+          input {
+            width: 400px;
+            height: 186px;
+            border: $borde-input;
+            border-radius: $border-radius;
+          }
+      }
+    }
+  
+    &__guardar-volver {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+  
+        button {
+          margin: 10px;
+          border: $borde-button;
+          border-radius: $border-radius;
+          background-color: $fondo-button;
+        }
+  
+        button:hover {
+          background-color: rgb(27, 19, 69);
+          color: white;
+        }
+  
+        a {
+          margin: 10px;
+        }
+    }
+  }
