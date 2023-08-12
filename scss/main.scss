@@ -12,7 +12,8 @@ html body {
 }
 
 main h1 {
-    @include dflex-jutifycen-aligncen;
+    @include dflex-justifycen-aligncen;
+    font-size: 3em;
     position: relative;
     top: 20px;
     color: $color-titulos;
@@ -45,7 +46,7 @@ main h1 {
     top: 95px;
     left: 18px;
     text-decoration: none;
-    color:$azul-muy-oscuro;
+    color: $azul-muy-oscuro;
     font-family: 'Tektur', cursive;
   }
 
@@ -98,7 +99,7 @@ footer {
   bottom: 0;
 
   div {
-    @include dflex-jutifycen-aligncen;
+    @include dflex-justifycen-aligncen;
     height: 100px;
   }
   
@@ -111,7 +112,7 @@ footer {
 
 .main-inicio {
   &__descripcion, h1 {
-    @include dflex-jutifycen-aligncen;
+    @include dflex-justifycen-aligncen;
     position: relative;
     top: 20px;
   }
@@ -161,10 +162,11 @@ footer {
 }
 
 .main-bibliografia {
+  
   &__enlaces {
     @include dflex-column-aligncen;
     align-items: normal;
-    margin: 10px;
+    margin-top: 20px;
   }
 
   &__enlaces li {
@@ -204,29 +206,28 @@ footer {
 }
 
 .main-publicidad {
+  @include dflex-column-aligncen;
   h3, h5 {
-    padding-top: 10px;
-    padding-left: 25px;
-    color: rgb(32, 28, 61);
+    color: $azul-muy-oscuro;
+    margin-top: 20px;
   }
 
   &__datos {
     @include dflex-column-aligncen;
-    align-items: normal;
-    width: 500px;
-    margin-left: 25px;
-    position: relative;
-    top: 40px
+    margin-top: 40px;
+    width: 50vw;
   }
 
   &__datos {
     input {
+      width: 70%;
       margin-bottom: 10px;
       border: $borde-input;
       border-radius: $border-radius;
     }
 
     button {
+      width: 30%;
       margin-bottom: 10px;
       border: $borde-button;
       border-radius: $border-radius;
@@ -241,14 +242,18 @@ footer {
 }
 
 .main-nosotros {
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-bottom: 100px;
+  @include dflex-column-aligncen;
+  margin: 0 40px;
 
-  h2, h3, h5, p {
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  h3, p {
     color: rgb(32, 28, 61);
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
+    text-align: center;
   }
 
   p {
@@ -257,26 +262,16 @@ footer {
 }
 
 .mi-cuenta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  top: 30px;
+  @include dflex-column-aligncen;
 
   &__avatar {
-    display: flex;
+    @include dflex-column-aligncen;
 
     &__logo {
       height: 170px;
       width: 150px;
-      margin: 15px;
-    }
-
-    &__cambiar {
-      display: flex;
-      align-self: flex-end;
-      position: relative;
-      bottom: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
 
@@ -311,11 +306,9 @@ footer {
   }
 
   &__guardar-volver {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    position: relative;
-    top: 35px;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
 
       button {
         margin: 10px;
