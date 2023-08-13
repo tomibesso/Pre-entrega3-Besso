@@ -19,8 +19,48 @@ main h1 {
       display: grid;
       grid-template-columns: 25% 25% 25% 25% ;
       grid-template-rows: 350px 350px;
-      padding:  75px 100px 100px 100px;
+      padding:  75px 100px 25px 100px;
       flex-wrap: wrap;
+    }
+
+    &__contenido-inicio {
+      margin: 0 30px;
+
+        div {
+          @include dflex-column-aligncen;
+          margin-bottom: 50px;
+
+          h2 {
+            font-size: 3.5em;
+            margin-bottom: 30px;
+            color: $color-h2;
+          }
+
+          h3 {
+            font-size: 24px;
+            color: $color-texto;
+          }
+
+          h5 {
+            font-size: 1.5em;
+            color: $color-texto;
+            margin-bottom: 20px;
+          }
+
+          p {
+            text-align: center;
+            color: $color-texto;
+          }
+
+          strong {
+            font-size: 1.5em;
+          }
+
+          ul li {
+            color: $color-texto;
+            list-style-type: square;
+          }
+        }
     }
   }
   
@@ -30,8 +70,7 @@ main h1 {
     background-color: #5f6691b7;
   
       img {
-        height: 160px;
-        width: 284.8px;
+        @include w-h (284.8px, 160px);
         border: 2px solid rgba(1, 1, 51, 0.1);
       }
   
@@ -51,6 +90,11 @@ main h1 {
       background-color: rgba(5, 11, 167, 0.6);
       border-radius: 10%;
       border: 2px solid rgb(1, 1, 58);
+
+        a {
+          text-decoration: none;
+          color: rgb(4, 0, 28);
+        }
     }
   
     &__button:hover {
@@ -149,7 +193,7 @@ main h1 {
     }
   
     h3, p {
-      color: rgb(32, 28, 61);
+      color: $color-texto;
       font-family: 'Kanit', sans-serif;
       font-weight: bold;
       text-align: center;
@@ -167,8 +211,7 @@ main h1 {
       @include dflex-column-aligncen;
   
       &__logo {
-        height: 170px;
-        width: 150px;
+        @include w-h (150px, 170px);
         margin-top: 20px;
         margin-bottom: 20px;
       }
@@ -196,8 +239,7 @@ main h1 {
         margin-top: 10px;
   
           input {
-            width: 400px;
-            height: 186px;
+            @include w-h (400px, 186px);
             border: $borde-input;
             border-radius: $border-radius;
           }

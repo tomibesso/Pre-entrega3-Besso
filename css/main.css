@@ -30,16 +30,15 @@ html body {
   height: 100px;
 }
 .header__logo {
-  height: 75px;
-  width: 75px;
-  position: absolute;
-  top: 15px;
-  left: 15px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 5px;
   border-radius: 50%;
 }
 .header__logo:hover {
-  background-color: rgba(190, 190, 251, 0.4823529412);
-  transition: 0.2s linear;
+  scale: 1.1;
+  transition: 0.1s linear;
 }
 .header__wikimotos {
   position: absolute;
@@ -124,8 +123,42 @@ main h1 {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 350px 350px;
-  padding: 75px 100px 100px 100px;
+  padding: 75px 100px 25px 100px;
   flex-wrap: wrap;
+}
+.main-inicio__contenido-inicio {
+  margin: 0 30px;
+}
+.main-inicio__contenido-inicio div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.main-inicio__contenido-inicio div h2 {
+  font-size: 3.5em;
+  margin-bottom: 30px;
+  color: rgb(27, 8, 59);
+}
+.main-inicio__contenido-inicio div h3 {
+  font-size: 24px;
+  color: rgb(32, 28, 61);
+}
+.main-inicio__contenido-inicio div h5 {
+  font-size: 1.5em;
+  color: rgb(32, 28, 61);
+  margin-bottom: 20px;
+}
+.main-inicio__contenido-inicio div p {
+  text-align: center;
+  color: rgb(32, 28, 61);
+}
+.main-inicio__contenido-inicio div strong {
+  font-size: 1.5em;
+}
+.main-inicio__contenido-inicio div ul li {
+  color: rgb(32, 28, 61);
+  list-style-type: square;
 }
 
 .main-inicio__galeria .main-inicio__galeria__card {
@@ -134,8 +167,8 @@ main h1 {
   background-color: rgba(95, 102, 145, 0.7176470588);
 }
 .main-inicio__galeria .main-inicio__galeria__card img {
-  height: 160px;
   width: 284.8px;
+  height: 160px;
   border: 2px solid rgba(1, 1, 51, 0.1);
 }
 .main-inicio__galeria .main-inicio__galeria__card p {
@@ -155,6 +188,10 @@ main h1 {
   background-color: rgba(5, 11, 167, 0.6);
   border-radius: 10%;
   border: 2px solid rgb(1, 1, 58);
+}
+.card-body__button a {
+  text-decoration: none;
+  color: rgb(4, 0, 28);
 }
 .card-body__button:hover {
   background-color: rgba(5, 5, 118, 0.718);
@@ -263,8 +300,8 @@ main h1 {
   align-items: center;
 }
 .mi-cuenta__avatar__logo {
-  height: 170px;
   width: 150px;
+  height: 170px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
