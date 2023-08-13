@@ -7,8 +7,22 @@ main h1 {
     animation-name: animacion-h1;
     animation-duration: 2s;
   }
+
+  #ir-al-pie-de-pagina {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(11, 10, 27);
+    @include w-h (150px, 30px);
+    @include dflex-justifycen-aligncen;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #afafdd
+  }
   
   .main-inicio {
+
     &__descripcion, h1 {
       @include dflex-justifycen-aligncen;
       position: relative;
